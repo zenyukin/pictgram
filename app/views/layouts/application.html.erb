@@ -19,7 +19,7 @@
       <div class="container">
         <%= link_to root_path do %>
           <span><%= image_tag "icons/logo.png", class: "navbar-brand" %></span>
-        <% end %>  
+        <% end %>
         <ul class="nav navbar-nav navbar-right">
           <% if logged_in? %>
             <li>
@@ -52,6 +52,7 @@
         </ul>
       </div>
     </nav>
+
     
     
     <%= yield %>
