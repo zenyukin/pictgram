@@ -15,8 +15,9 @@ class TopicsController < ApplicationController
   end
   
   def index
-    @topics = Topic.all
+    @topics = Topic.all.includes(:favorite_users)
   end
+  
   
   private
   def topic_params
